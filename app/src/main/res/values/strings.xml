@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Random Images</string>
+    <string name="loadingPhoto">loadingPhoto</string>
+    <string name="click_here">Click here!</string>
+    <string name="picasso">Picasso</string>
+    <string name="click_for_picasso">click for Picasso</string>
+    <string name="click_for_glide">Click for Glide</string>
+    <string name="find_image">Find image!</string>
+    <string name="enter_image_keyword">Enter image keyword</string>
+    <string name="use_keyword">Use keyword</string>
+</resources>

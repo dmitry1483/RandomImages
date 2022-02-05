@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/loadingWithGlide"
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:contentDescription="@string/loadingPhoto"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintVertical_chainStyle="packed"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.03"
+        />
+
+    <Button
+        android:id="@+id/buttonGlide"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:importantForAutofill="no"
+        android:text="@string/find_image"
+        app:layout_constraintEnd_toEndOf="@+id/loadingWithGlide"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/loadingWithGlide"
+        app:layout_constraintTop_toBottomOf="@+id/loadingWithGlide" />
+
+    <androidx.appcompat.widget.SwitchCompat
+        android:id="@+id/switchKeyWord"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/use_keyword"
+        app:layout_constraintEnd_toEndOf="@+id/loadingWithGlide"
+        app:layout_constraintTop_toBottomOf="@+id/buttonGlide" />
+
+    <EditText
+        android:id="@+id/inputSearchText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/enter_image_keyword"
+        android:imeOptions="actionSearch"
+        android:importantForAutofill="no"
+        android:inputType="text"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="@+id/loadingWithGlide"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/loadingWithGlide"
+        app:layout_constraintTop_toBottomOf="@+id/switchKeyWord" />
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/progress_circular"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="@+id/loadingWithGlide"
+        app:layout_constraintEnd_toEndOf="@+id/loadingWithGlide"
+        app:layout_constraintTop_toTopOf="@+id/loadingWithGlide"
+        app:layout_constraintBottom_toBottomOf="@+id/loadingWithGlide"
+/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
